@@ -91,21 +91,6 @@ builder.Services.AddAuthentication(x => {
 });
 builder.Services.AddAuthorization();
 
-
-// Activamos CORS para permitir llamadas a la api desde otras url
-builder.Services.AddCors(option => {
-	option.AddDefaultPolicy(
-		policy => 
-		{
-			policy.WithOrigins(urlClientApp)
-			.AllowCredentials()
-			.AllowAnyHeader()
-			.AllowAnyMethod();
-        }
-    );
-});
-
-
 // DAL - BASE DE DATOS
 builder.Services.AddScoped<AdminDal>(); // Dal de administradores
 builder.Services.AddScoped<MedicoDal>(); // Dal de medicos
