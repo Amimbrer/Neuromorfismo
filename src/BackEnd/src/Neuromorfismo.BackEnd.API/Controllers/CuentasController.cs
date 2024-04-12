@@ -65,9 +65,9 @@ namespace Neuromorfismo.BackEnd.API.Controllers
                     }
                 }
 
-                return Unauthorized("Usuario o contraseña no válidos");
+                return Unauthorized();
             } catch (Exception) {
-                return Unauthorized("Usuario o contraseña no válidos");
+                return BadRequest();
             }
         }
 

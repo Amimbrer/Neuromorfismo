@@ -59,7 +59,11 @@ namespace Neuromorfismo.FrontEnd.WebApp.Pages
                         await redirigirManager.RedirigirDefault();
                     }
                 } else {
-                    mensajeErrorLogin = await respuesta.Content.ReadAsStringAsync();
+                    if(respuesta.StatusCode == System.Net.HttpStatusCode.Unauthorized) {
+                        mensajeErrorLogin = "Usuario o contraseña no válidos";
+                    } else {
+                        mensajeErrorLogin = "Actualmente no es posible realizar login, intémtelo de nuevo más tarde";
+                    }
                     cargando = false;
                 }
             } catch (Exception) {
