@@ -20,9 +20,6 @@ namespace Neuromorfismo.BackEnd.API
             sb.Append($"DataBase={dbConfig.DataBase};");
             sb.Append($"User={dbConfig.User};");
             sb.Append($"Password={dbConfig.Password};");
-            sb.Append($"SSL Mode={dbConfig.SslMode};");
-            sb.Append($"CertificateFile={dbConfig.CertificateFile};");
-            sb.Append($"CertificatePassword={dbConfig.CertificatePassword};");
             sb.Append($"AllowUserVariables={dbConfig.AllowUserVariables};");
 
             // devolvemos el string builder
@@ -37,9 +34,6 @@ namespace Neuromorfismo.BackEnd.API
         public string? DataBase { get; set; }
         public string? User { get; set; }
         public string? Password { get; set; }
-        public string? SslMode { get; set; }
-        public string? CertificateFile { get; set; }
-        public string? CertificatePassword { get; set; }
         public bool AllowUserVariables { get; set; }
 
     }
