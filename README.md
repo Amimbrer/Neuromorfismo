@@ -74,7 +74,6 @@ And that are all the funcionalities of my app, now I am going to explain what te
     2. Services layer with some small functions of validation for de dtos.
   
 I tryed to do the best code in all my project, using the better techniques, CLEAN CODE, SOLID principles...
-***If your write that thank you I hope I made myself clear because my english is not the best.****
 
 ## Some pictures of the App: 
 ![WebMedicina0](https://github.com/Amimbrer/WebMedicina/assets/136268910/b5553272-74a2-47ba-b2b3-9e0df8b02d2c)
